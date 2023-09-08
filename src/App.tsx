@@ -20,11 +20,14 @@ function App() {
 
       <div className="card">
         <div className="texts">
-          <h1>hello</h1>
-          <p>good morning</p>
+          <h1>Meet</h1>
+          <p>Your favorite Starwars characters</p>
         </div>
         <div className='image'>
+        
           <img src={Room} alt="Image" />
+          
+         
         </div>
       </div>
       {showRecentlyViewed && (

@@ -4,6 +4,9 @@
   --white:#ffffff;
 }
 body{
+  
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+  
   background-color: var(--blue);
 }
 h1,p{

@@ -9,6 +9,7 @@ interface Character {
     height: string;
     mass: string;
     url: string; 
+    opening_crawl: string;
   }
   
   const CharacterDetail = () => {
@@ -18,7 +19,7 @@ interface Character {
     useEffect(() => {
       const fetchCharacter = async () => {
         try {
-          const response = await fetch(`https://swapi.dev/api/people/${characterId}/`);
+          const response = await fetch(`https://swapi.dev/api/films/${characterId}/`);
           const data = await response.json();
           setCharacter(data);
         } catch (error) {
@@ -41,6 +42,7 @@ interface Character {
             <p>Gender: {character.gender}</p>
             <p>Height: {character.height}</p>
             <p>Mass: {character.mass}</p>
+            <p> </p>
             <Link to="/">Back to List</Link>
           </div>
         </div>
@@ -103,6 +105,8 @@ interface Character {
                   <div className="Mdec">
                     <h1>{character.name}</h1>
                     <p>{character.height}</p>
+                    <p>Opening Crawl:</p>
+              <p>{character.opening_crawl}</p>
                   </div>
                 </div>
               </Link>
