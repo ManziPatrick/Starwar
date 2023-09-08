@@ -1,0 +1,46 @@
+.subNav{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid white;
+    padding-top: 100px;
+}
+.subNav a{
+    text-align: center;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+}
+.subNav a:hover{
+    color: rgb(172, 24, 24);
+}
+.Mdec h1{
+    font-style: normal;
+    font-size: 20px;
+    
+}
+.ListerCards{
+   display: inline-flex;
+   flex-wrap: wrap;
+   justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    gap:4%
+}
+.cardConteiner:hover{
+    box-shadow: 2px 2px 2px 2px rgba(182, 21, 21, 0.452) ;
+}
+.cardConteiner{
+    margin-bottom: 40px;
+    width: 250px;
+    padding: 5px  15px;
+    height: 320px;
+    background-color: rgb(158, 15, 15);
+    border-radius: 10px;
+}
+.cardConteiner img{
+    width: 100%; 
+    height: 200px;
+    border-radius: 10px;
+}

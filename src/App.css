@@ -1,0 +1,64 @@
+
+*{
+margin: 0;
+
+}
+.card{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+ padding-top: 100px;
+
+
+}
+
+.card img{
+  
+  
+  
+}
+.carousel-group{
+ display: flex;
+ justify-content: center;
+ justify-content: space-around;
+ margin-bottom: 150px;
+}
+.dots{
+  text-align:center"
+}
+
+.card-container {
+  display: flex;
+ 
+}
+
+
+
+
+
+
+.imagecards{
+  padding-left: 30px;
+width: 25%;
+
+
+border: 10px solid rgba(197, 181, 181, 0.13);
+border-radius: 5px;
+}
+.imagecards img{
+ 
+  width: 30px;
+}
+.imagecards p{
+  text-align: right;
+}
+.smallcards{
+  display: flex;
+  justify-content: space-around;
+ 
+ 
+}
+.middle{
+  margin-top: -60px;
+}
+

@@ -1,0 +1,37 @@
+/* FoaterContainer styles */
+.FoaterContainer {
+    
+   
+    border-top: 2px solid rgb(248, 235, 235);
+   
+  }
+  
+  .FoaterContent {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+  }
+  
+  .FoaterIcon {
+    margin: 0 10px; 
+  }
+  
+  
+  .FoaterIcon a {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.2s; 
+  }
+  
+
+  .FoaterIcon a:hover {
+    color: #ffffff; 
+  }
+  
+ 
+  .Copyright {
+    font-size: 12px; 
+    margin-top: 10px;
+    text-align: center;
+  }
+  
