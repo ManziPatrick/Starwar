@@ -41,6 +41,10 @@
     color: var(--navbar-link-hover, #ff8800);
     position: relative; 
   }
+  .srch img{ 
+  color: white;
+  opacity: 0.1 white;;
+  }
   
   
   :root {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Log from '../assets/logo.png';
+import Search from '../assets/search.png';
 import './navbar.css';
 
 const Navbar = () => {
@@ -25,7 +26,7 @@ const Navbar = () => {
         </Link>
         <div className="navContent">
           <div className="navIcon">
-          
+          <div className="autocom-box"></div>
             {showSearchInput ? (
               <input
                 type="text"
@@ -34,7 +35,8 @@ const Navbar = () => {
                 onChange={handleSearchInputChange}
               />
             ) : (
-              <span onClick={handleSearchIconClick}>search</span>
+              <span onClick={handleSearchIconClick} className="srch"><img src={Search} alt="" srcset="" /> search</span>
+             
             )}
           </div>
           <div className="navIcon">

@@ -1,0 +1,10 @@
+.errorCode{
+ padding: 18%;
+ text-align: center;
+    
+}
+
+.errorCode h1{
+    color: red;
+    font-size: 72px;
+}

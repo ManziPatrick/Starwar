@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
+import movis from "../assets/movis.png"
 
-import Avenger from "../assets/Avengers.jpg";
 import Character from "./information.tsx"
 import MainLayout from "../componet/layout";
 import { Link, useParams } from "react-router-dom";
-import "./lister.css";
+import "./inf.css";
 
 interface Character {
   name: string;
@@ -39,12 +39,48 @@ const CharacterDetail = () => {
   return (
     <><MainLayout>
       <div className="body">
+        <div className="Fcontair"> 
+        <div className="intro">
+        <h1>Name:{character.name}</h1>
+        <h2>played by:</h2>
+        
         <div className="characterDetail">
-          <h1>{character.name}</h1>
+        <div className="Iage">
+        <p><h1>{character.height}</h1>
+         Height</p>
+         <div className="line">
+         </div>
+         <p><h1>{character.mass}</h1>
+         mass</p>
+         <div className="line">
+         </div>
+         <p><h1>{character.mass}</h1>
+         mass</p>
+         </div>
+
           <p>Gender: {character.gender}</p>
-          <p>Height: {character.height}</p>
-          <p>Mass: {character.mass}</p>
+          
+          <p>skin color: {character.mass}</p>
+          <p>Eye Color: {character.gender}</p>
+          
+          <p>Hair color: {character.mass}</p>
+          <p>Gender: {character.gender}</p>
+          
+          <p>home wold: {character.mass}</p>
+          <p> Species: {character.mass}</p>
+
+          <div className="head"><div className="line">
+         </div><h1 > Vehicles</h1></div>
+        
+
+         <p><div className="circe"></div>lorem ipsum</p>
+         
           <Link to="/">Back to List</Link>
+        </div>
+        </div>
+        <div className="image">
+<img src={movis} alt=""  />
+        </div>
         </div>
       </div>
      

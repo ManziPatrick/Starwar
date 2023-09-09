@@ -1,4 +1,5 @@
 import React from 'react';
+import Error from './pages/Error.tsx';
 import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'; // Import Route
 import ReactDOM from 'react-dom';
 import App from './App.tsx';
@@ -17,8 +18,12 @@ const router = createBrowserRouter([
     element: <Lister />,
   },
   {
-    path: '/character/:characterId', // Define a route parameter for characterId
-    element: <CharacterDetail />, // Render the CharacterDetail component
+    path: '/character/:characterId', 
+    element: <CharacterDetail />, 
+  },
+  {
+    path: '/error',
+    element: <Error />,
   },
 ]);
 
