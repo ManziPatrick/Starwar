@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Log from '../assets/logo.png';
 import Search from '../assets/search.png';
@@ -13,10 +13,10 @@ const Navbar = () => {
     setShowSearchInput(true);
   };
 
-  const handleSearchInputChange = (e:any) => {
-   
+  function handleSearchInputChange(e:any) {
+
     setSearchQuery(e.target.value);
-  };
+  }
 
   return (
     <>
@@ -35,7 +35,7 @@ const Navbar = () => {
                 onChange={handleSearchInputChange}
               />
             ) : (
-              <span onClick={handleSearchIconClick} className="srch"><img src={Search} alt="" srcset="" /> search</span>
+              <span onClick={handleSearchIconClick} className="srch"><img src={Search} alt=""  /> search</span>
              
             )}
           </div>

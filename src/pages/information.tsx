@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import movis from "../assets/movis.png"
 
-import Character from "./information.tsx"
+import Character from "./information"
 import MainLayout from "../componet/layout";
 import { Link, useParams } from "react-router-dom";
 import "./inf.css";
@@ -15,7 +15,9 @@ interface Character {
 }
 
 const CharacterDetail = () => {
-  const { characterId }: { characterId: string } = useParams(); 
+  const { characterId }: { characterId?: string } = useParams();
+
+  console.log('characterId:', characterId);
   const [character, setCharacter] = useState<Character | null>(null);
 
   useEffect(() => {

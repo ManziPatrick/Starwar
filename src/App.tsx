@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import Footerbar from "./componet/Footer";
 import Room from "./assets/Room.png"
 import Navbar from "./componet/navbar";
